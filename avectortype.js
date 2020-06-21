@@ -1,13 +1,14 @@
 class Vec {
-    constructor(x,y){
+    constructor(x,y,a,b){
         this.x = x;
         this.y = y;
+       
     }
-    get sum (a,b){
-        return [(this.x+a) , (this.y+b)]
+    get sum (other){
+        return [(this.x+other.a) , (this.y+other.b)]
     }
-    get minus(a,b){
-        return [(this.x-a), (this.y-b)]
+    get minus(other){
+        return [(this.x-other.a), (this.y-other.b)]
     }
     get length(){return Math.sqrt((this.x*this.x+this.y*this.y));
 
